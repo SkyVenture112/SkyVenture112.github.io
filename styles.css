@@ -12,17 +12,29 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: #203525;
 }
   
-h1 {
+h1, h2 {
   color: beige;
   letter-spacing: 0.15px;
+  margin-top: 50px;
 }
 
 p {
-  margin: 0;
+  margin-top: 50px;
+  color: beige;
+}
+
+p.biography {
+
+  font-size: 18px;
+  margin-top: 250px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  
 }
 
 
@@ -115,12 +127,29 @@ margin: 0 0 10px;
   50% { border-color: white; }
 }
 
-.fade-in-image {
+.fade-in-image.bossbaby {
   margin-top: 100px; /* Adds space between the image and the text */
-  height: 500px;
+  height: auto;
   width: 500px;
   gap: 25px;
 }
+
+.fade-in-image.sans {
+  margin-top: 100px; /* Adds space between the image and the text */
+  margin-bottom: 100px;
+  margin-right: 100px;
+  height: auto;
+  width: 500px;
+  gap: 25px;
+}
+
+.biography-container {
+  display: flex;
+  align-items: flex-start; /* Aligns items at the top */
+  gap: 20px; /* Adds space between the image and bio text */
+}
+
+
 
 .fade-in-image {
   animation: fadeIn ease 5s;
