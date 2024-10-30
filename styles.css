@@ -29,7 +29,7 @@ p {
 
 p.biography {
 
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 250px;
   margin-left: 50px;
   margin-right: 50px;
@@ -78,27 +78,46 @@ header {
   opacity: 0.5;
 }
 
-
 .portfolio {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 20px;
-padding: 20px;
+  background-color: #CEB992;
+
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Set min-width for smaller columns */
+  gap: 15px; /* Reduce spacing between items */
+  padding: 10px;
+  width: 100%;
+  max-width: 1000px; /* Set a maximum width for the grid container */
+}
+
+/* Project Card */
+.project {
+  border: 2px solid #ddd;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 100%; /* Ensures each project takes full width within its grid cell */
+}
+
+
+.project-info {
+  font-size: 0.8em;
+  padding: 15px;
 }
 
 .project img {
-max-width: 300px;
-height: auto;
-object-fit: cover;
-border-radius: 8px;
+  width: 50%;
+  height: auto;
+  display: block;
 }
 
-.project h2 {
-margin: 10px 0 5px;
-}
 
-.project p {
-margin: 0 0 10px;
+/* Hover Effect */
+.project:hover {
+  transform: scale(1.05);
 }
 
 
