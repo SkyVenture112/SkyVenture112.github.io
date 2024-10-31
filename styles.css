@@ -67,6 +67,12 @@ header {
   background-color: #777; 
 }
 
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 35px; 
+}
+
 .github-logo {
   width: 40px;
   height: 40px;
@@ -75,6 +81,17 @@ header {
 }
 
 .github-logo:hover {
+  opacity: 0.5;
+}
+
+.linkedin-logo {
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.linkedin-logo:hover {
   opacity: 0.5;
 }
 
@@ -105,7 +122,8 @@ header {
 
 .project-info {
   font-size: 0.8em;
-  padding: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .project img {
