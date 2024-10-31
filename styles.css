@@ -140,29 +140,28 @@ header {
 
 
 .typewriter h1 {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typewriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .05em; /* Adjust as needed */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .05em;
   animation: 
     typing 4.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-    margin-top: 100px;
+    blink-caret 0.75s step-end 5; /* Only blink 5 times */
+  margin-top: 100px;
 }
 
-/* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from { width: 0; }
+  to { width: 100%; }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
+  from, to { border-color: transparent; }
   50% { border-color: white; }
 }
+
 
 .fade-in-image.bossbaby {
   margin-top: 100px; /* Adds space between the image and the text */
