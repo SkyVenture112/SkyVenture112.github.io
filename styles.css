@@ -107,7 +107,7 @@ header {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Create responsive grid with fixed min size */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   gap: 20px;
   padding: 20px;
   max-width: 1400px;
@@ -199,26 +199,27 @@ header {
 }
 
 
-.fade-in-image.bossbaby {
-  margin-top: 100px; /* Adds space between the image and the text */
+.fade-in-image.frontend {
+  margin-top: 100px;
   height: auto;
-  width: 500px;
+  width: 750px;
   gap: 25px;
 }
 
-.fade-in-image.sans {
-  margin-top: 100px; /* Adds space between the image and the text */
-  margin-bottom: 100px;
-  margin-right: 100px;
+.fade-in-image.codeart {
+  margin-top: 100px; 
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
   height: auto;
-  width: 500px;
+  width: 600px;
   gap: 25px;
 }
 
 .biography-container {
   display: flex;
-  align-items: flex-start; /* Aligns items at the top */
-  gap: 20px; /* Adds space between the image and bio text */
+  align-items: flex-start; 
+  gap: 20px; 
 }
 
 
