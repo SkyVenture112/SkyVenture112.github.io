@@ -48,6 +48,8 @@ header {
 }
 
 .nav-buttons {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
   list-style: none;
   display: flex;
   gap: 20px; 
@@ -55,17 +57,19 @@ header {
 }
 
 .button {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-decoration: none;
-  color: white;
-  background-color: #555;
+  color: black;
   padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  border-bottom: 2px solid transparent; 
+  transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #777; 
+  border-bottom: 2px solid white; 
+  color: white;
 }
+
 
 .social-links {
   display: flex;
