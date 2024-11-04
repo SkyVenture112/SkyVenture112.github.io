@@ -31,8 +31,8 @@ p.biography {
 
   font-size: 20px;
   margin-top: 250px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
   
 }
