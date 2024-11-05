@@ -19,18 +19,18 @@ body {
 h1, h2, h3 {
   color: #CEB992;
   letter-spacing: 0.15px;
-  margin-top: 50px;
+  margin-top: 5%;
 }
 
 p {
-  margin-top: 50px;
+  margin-top: 5%;
   color: #CEB992;
 }
 
 p.biography {
 
-  font-size: 20px;
-  margin-top: 250px;
+  font-size: 22px;
+  margin-top: 15%;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
@@ -200,19 +200,19 @@ header {
 
 
 .fade-in-image.frontend {
-  margin-top: 100px;
+  margin-top: 5%;
   height: auto;
   width: 750px;
   gap: 25px;
 }
 
 .fade-in-image.bioimage {
-  margin-top: 100px; 
+  margin-top: 5%; 
   margin-bottom: auto;
   margin-right: auto;
   margin-left: auto;
   height: auto;
-  width: 550px;
+  width: 500px;
   gap: 25px;
 }
 
