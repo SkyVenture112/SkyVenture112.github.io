@@ -13,18 +13,18 @@ html {
 
 body {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: #585563;
+  background-color: #333333;
 }
   
 h1, h2, h3 {
-  color: #CEB992;
+  color: #edf2f4;
   letter-spacing: 0.15px;
   margin-top: 5%;
 }
 
 p {
   margin-top: 5%;
-  color: #CEB992;
+  color: #d5ccc7;
 }
 
 p.biography {
@@ -42,7 +42,7 @@ header {
   display: flex;
   justify-content: space-between; 
   align-items: center; 
-  background-color: #CEB992;
+  background-color: #a9a29c;
   padding: 10px 20px;
   color: white;
 }
@@ -183,7 +183,7 @@ header {
   margin: 0 auto;
   letter-spacing: .05em;
   animation: 
-    typing 3.5s steps(40, end),
+    typing 4.0s steps(40, end),
     blink-caret 0.75s step-end 5; 
   margin-top: 100px;
 }
@@ -193,7 +193,7 @@ header {
     width: 0
   }
   to {
-    width: 45%
+    width: 70%
   }
 }
 
