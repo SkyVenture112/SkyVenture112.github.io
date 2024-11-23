@@ -14,6 +14,8 @@ html {
 body {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: #333333;
+  /* background: rgb(2,5,20); ---- Gradient testing
+  background: linear-gradient(0deg, rgba(2,5,20,1) 0%, rgba(1,102,235,1) 38%, rgba(255,255,255,1) 89%); */
 }
   
 h1, h2, h3 {
@@ -193,7 +195,7 @@ header {
     width: 0
   }
   to {
-    width: 70%
+    width: 80%
   }
 }
 
