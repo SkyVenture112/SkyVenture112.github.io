@@ -11,8 +11,6 @@ html {
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: #333333;
-  color: #edf2f4;
-  text-align: center;
 }
 
 h1, h2, h3 {
@@ -210,8 +208,12 @@ nav {
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 70%; }
+  from {
+    width: 0
+  }
+  to {
+    width: 70%
+  }
 }
 
 @keyframes blink-caret {
