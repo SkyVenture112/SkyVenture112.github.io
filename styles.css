@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+
 html {
   font-size: 16px;
 }
@@ -11,6 +12,8 @@ html {
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: #333333;
+  color: #edf2f4;
+  text-align: center;
 }
 
 h1, h2, h3 {
@@ -22,6 +25,7 @@ h1, h2, h3 {
 p {
   margin-top: 5%;
   color: #d5ccc7;
+  line-height: 1.6;
 }
 
 #biography {
@@ -41,17 +45,15 @@ header {
   color: white;
 }
 
-
 .social-links {
   display: flex;
   align-items: center;
   gap: 35px; 
-  margin-left: 300px;  
+  margin-left: 300px;
 }
 
-
 nav {
-  margin-right: 300px;  
+  margin-right: 300px;
 }
 
 .nav-buttons {
@@ -74,7 +76,6 @@ nav {
   border-bottom: 2px solid white; 
   color: white;
 }
-
 
 .github-logo {
   width: 45px;
@@ -208,12 +209,8 @@ nav {
 }
 
 @keyframes typing {
-  from {
-    width: 0
-  }
-  to {
-    width: 70%
-  }
+  from { width: 0; }
+  to { width: 70%; }
 }
 
 @keyframes blink-caret {
@@ -230,14 +227,13 @@ nav {
 
 .fade-in-image.bioimage {
   margin-top: 5%; 
-  margin-left: 80px;
+  margin-left: 80px; 
   height: auto;
   width: 100%;
   max-width: 500px;
-  border-radius: 8px;
-  box-shadow: 8px 4px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;    
+  box-shadow: 8px 4px 8px rgba(0,0,0,0.2); 
 }
-
 
 .biography-container {
   display: flex;
@@ -299,8 +295,7 @@ nav {
     justify-content: center;
     margin-top: 10px;
     gap: 15px; 
-    margin-left: 0;  /* Remove the extra left margin on small screens */
-  }
+    margin-left: 0;  
 
   header {
     flex-direction: column;
@@ -329,4 +324,6 @@ nav {
   .gallery-item {
     margin-top: 15px;
   }
+}
+
 }
