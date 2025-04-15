@@ -417,25 +417,39 @@ nav {
     padding: 0 10px;
   }
 
-  .nav-buttons {
+  header {
     flex-direction: column;
-    align-items: center;
-    gap: 5px;
+    padding: 15px;
   }
 
   .social-links {
-    justify-content: center;
-    margin-top: 10px;
-    gap: 15px; 
-    margin-left: 0;  
+    margin: 10px 0;
+    margin-left: 0;
   }
 
-  header {
+  nav {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .nav-buttons {
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 15px 10px;
+    gap: 10px;
   }
+
+
+  .button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    background-color: rgba(169, 162, 156, 0.1);
+    border-radius: 4px;
+  }
+
+
+
 
   .typewriter h1 {
     font-size: 1.5rem; 
@@ -477,5 +491,20 @@ nav {
   
   .portfolio-subtitle {
     font-size: 1.2rem;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .primary-btn, .secondary-btn {
+    width: 100%;
+    text-align: center;
   }
 }
