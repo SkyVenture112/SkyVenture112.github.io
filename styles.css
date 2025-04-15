@@ -241,9 +241,7 @@ nav {
   margin-left: 0;
   height: auto;
   width: 100%;
-  max-width: 400px; 
-  border-radius: 8px;    
-  box-shadow: 8px 4px 8px rgba(0,0,0,0.2); 
+  max-width: 400px;     
 }
 
 .biography-container {
@@ -347,8 +345,6 @@ nav {
 
 .bioimage {
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
   margin: 0;
 }
 
