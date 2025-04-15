@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-
 html {
   font-size: 16px;
 }
@@ -26,12 +25,13 @@ p {
   margin-top: 5%;
   color: #d5ccc7;
   line-height: 1.6;
+  font-size: 1.2rem; 
 }
 
 #biography {
   font-size: 22px;
-  margin-top: 15%;
-  margin-left: auto;
+  margin-top: 0;
+  margin-left: 0;
   margin-right: auto;
   text-align: left;
 }
@@ -105,9 +105,9 @@ nav {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem 4rem;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -157,6 +157,11 @@ nav {
   text-align: center;
 }
 
+.project-info p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
 .portfolio.button {
   display: inline-block;
   padding: 8px 16px;
@@ -170,6 +175,11 @@ nav {
 
 .portfolio.button:hover {
   background-color: #555;
+}
+
+.portfolio-subtitle {
+  font-size: 22px;
+  margin: 1.5rem 0 3rem 0;  
 }
 
 .writing-list {
@@ -204,13 +214,14 @@ nav {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .05em;
-  animation: typing 4.0s steps(40, end), blink-caret 0.75s step-end 5;
-  margin-top: 100px;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  width: 100%;
+  max-width: 900px;
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 70%; }
+  from { width: 0 }
+  to { width: 100% }
 }
 
 @keyframes blink-caret {
@@ -227,18 +238,21 @@ nav {
 
 .fade-in-image.bioimage {
   margin-top: 5%; 
-  margin-left: 80px; 
+  margin-left: 0;
   height: auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px; 
   border-radius: 8px;    
   box-shadow: 8px 4px 8px rgba(0,0,0,0.2); 
 }
 
 .biography-container {
-  display: flex;
-  align-items: flex-start; 
-  gap: 20px; 
+  display: grid;
+  grid-template-columns: 1fr 2fr;  
+  gap: 6rem;  
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .fade-in-image {
@@ -247,6 +261,124 @@ nav {
   -moz-animation: fadeIn ease 5s;
   -o-animation: fadeIn ease 5s;
   -ms-animation: fadeIn ease 5s;
+}
+
+.bio-content {
+  padding-left: 1rem; 
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #a9a29c;
+  margin: 1.5rem 0;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 4s;
+}
+
+.cta-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 4.5s;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.primary-btn {
+  background-color: #edf2f4;
+  color: #333333;
+}
+
+.secondary-btn {
+  border: 2px solid #edf2f4;
+  color: #edf2f4;
+}
+
+.primary-btn:hover, .secondary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background: #edf2f4;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.bioimage {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  margin: 0;
+}
+
+.bio-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.skills-section {
+  margin-top: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill-item {
+  background: rgba(237, 242, 244, 0.1);
+  padding: 0.8rem;
+  border-radius: 6px;
+  text-align: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-2px);
+  background: rgba(237, 242, 244, 0.2);
 }
 
 @keyframes fadeIn {
@@ -296,6 +428,7 @@ nav {
     margin-top: 10px;
     gap: 15px; 
     margin-left: 0;  
+  }
 
   header {
     flex-direction: column;
@@ -324,6 +457,25 @@ nav {
   .gallery-item {
     margin-top: 15px;
   }
-}
 
+  .biography-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .bio-content {
+    text-align: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+  
+  .portfolio-subtitle {
+    font-size: 1.2rem;
+  }
 }
